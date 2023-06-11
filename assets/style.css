@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-section,
+.main-section {
+    max-width: 100%;
+}
+
+.main-section {
+    margin: 0 0.3em;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    padding: 1em;
+}
+
+.profile-icon,
+.chat-icon {
+    width: 32px;
+    height: 33.42px;
+}
+
+.dog-paw-logo {
+    width: 74px;
+    height: 32px;
+}
+
+.dog-img {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.dog-name,
+.dog-age {
+    position: absolute;
+    top: 22em;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #F8F8F8;
+}
+
+.dog-name {
+    left: 0.5em;
+}
+
+.dog-age {
+    left: 4em;
+}
+
+.bio {
+    position: absolute;
+    top: 24.5em;
+    left: 0.5em;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4px;
+    color: #B7B7B7;
+}
+
+.feedback-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: 0.7em auto;
+}
+
+.cross-icon,
+.heart-icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 0.5em;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    background-color: #ffffff;
+}
+
+.cross-icon:hover {
+    background-color: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+.heart-icon:hover {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+.cross-icon img {
+    width: 21px;
+}
+
+.heart-icon img {
+    width: 25px;
+}
+
+#feedback-result {
+    position: absolute;
+    left: 14px;
+    top: 50px;
+}
+
+.like-badge,
+.reject-badge {
+    width: 150px;
+    height: 70px;
+    border-radius: 10.3807px;
+    transform: rotate(-30deg);
+}
+
+@media (min-width: 500px) {
+    .header-section,
+    .main-section {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1100px) {
+    .dog-img {
+        height: 480px;
+    }
+
+    .dog-name,
+    .dog-age {
+        top: 25em;
+    }
+    
+    .bio {
+        top: 27.5em;
+    }
+
+    .like-badge,
+    .reject-badge {
+        width: 200px;
+        height: 100px;
+        left: 14px;
+        top: 60px;
+    }
+}
